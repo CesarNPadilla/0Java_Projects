@@ -1,0 +1,344 @@
+!SESSION 2018-05-12 12:02:19.139 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-12 12:05:21.435
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Cesar Nieto'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-05-12 12:05:53.274
+!MESSAGE Connection to http://download.eclipse.org/releases/oxygen/201804111000/content.xml.xz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-05-12 12:06:43.832
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/oomph/drops/milestone/S20180504-103957-1.9.0-M6.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:172)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:96)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:164)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:145)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:92)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:108)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:252)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:102)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:77)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:45)
+	at org.eclipse.equinox.internal.provisional.p2.director.PlanExecutionHelper.executePlan(PlanExecutionHelper.java:42)
+	at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl$3.commit(ProfileTransactionImpl.java:543)
+	at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl.commit(ProfileTransactionImpl.java:340)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.perform(P2TaskImpl.java:729)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.doPerformNeededSetupTasks(SetupTaskPerformer.java:3324)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.access$1(SetupTaskPerformer.java:3267)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil$1.run(SetupTaskPerformer.java:4494)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil.performNeededSetupTasks(SetupTaskPerformer.java:4488)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil.access$0(SetupTaskPerformer.java:4486)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performNeededSetupTasks(SetupTaskPerformer.java:3258)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performTriggeredSetupTasks(SetupTaskPerformer.java:3233)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.perform(SetupTaskPerformer.java:3133)
+	at org.eclipse.oomph.setup.ui.wizards.ProgressPage$9.run(ProgressPage.java:567)
+	at org.eclipse.oomph.setup.ui.wizards.ProgressPage$11$1.run(ProgressPage.java:693)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2018-05-12 12:06:43.833
+!MESSAGE No repository found at http://download.eclipse.org/oomph/drops/milestone/S20180504-103957-1.9.0-M6.
+
+!ENTRY org.eclipse.equinox.p2.engine 2 4 2018-05-12 12:07:06.957
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2018-05-12 12:07:06.957
+!MESSAGE session context was:(profile=C__Users_Cesar Nieto_eclipse_java-oxygen_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.nebula.widgets.tablecombo,1.2.0.201805021040
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.base,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.base.edit,1.9.0.v20180429-1149
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.extractor.lib,1.4.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.jreinfo,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.jreinfo.ui,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.p2,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.p2.core,1.9.0.v20180504-1434
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.p2.doc,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.p2.edit,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.p2.ui,1.9.0.v20180503-1442
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.predicates,1.9.0.v20180426-1244
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.predicates.edit,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.preferences,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.resources,1.9.0.v20180429-1116
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.resources.edit,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup,1.9.0.v20180421-1024
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.core,1.9.0.v20180425-0647
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.doc,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.edit,1.9.0.v20180308-1210
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.editor,1.9.0.v20180503-1442
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.p2,1.9.0.v20180419-0636
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.p2.edit,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.sync,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.ui,1.9.0.v20180407-0456
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.setup.ui.questionnaire,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.ui,1.9.0.v20180429-1149
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.util,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.workingsets,1.9.0.v20180419-1035
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.workingsets.edit,1.9.0.v20171221-1140
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.oomph.workingsets.editor,1.9.0.v20180419-1035
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.oomph.p2,1.9.0.v20180504-1434
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.oomph.setup.core,1.9.0.v20180425-0647
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-05-12 12:07:06.958
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.oomph.setup,1.9.0.v20180504-1434
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2018-05-12 12:07:06.959
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\Cesar Nieto\eclipse\java-oxygen\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-05-12 12:40:23.549
+!MESSAGE Connection to http://download.eclipse.org/eclipse/updates/4.7/R-4.7-201706120950/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-05-12 12:41:52.521
+!MESSAGE Connection to http://download.eclipse.org/releases/oxygen/201712201001/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jdt.core 4 0 2018-05-12 13:00:09.226
+!MESSAGE Invalid ZIP archive: 0Lib/selenium_jars/IEDriverServer.exe [in Selenium_Test]
+
+!ENTRY org.eclipse.jdt.core 4 0 2018-05-12 13:01:07.807
+!MESSAGE Invalid ZIP archive: 0Lib/selenium_jars/IEDriverServer.exe [in Selenium_Test]
+
+!ENTRY org.eclipse.jdt.debug.ui 4 150 2018-05-12 13:01:07.839
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1051)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:265)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1119)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:151)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:868)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:331)
+	at org.eclipse.jdt.internal.debug.ui.actions.ToggleBreakpointAdapter.toggleBreakpoints(ToggleBreakpointAdapter.java:1376)
+	at org.eclipse.jdt.internal.debug.ui.actions.ToggleBreakpointAdapter.toggleBreakpointsWithEvent(ToggleBreakpointAdapter.java:1568)
+	at org.eclipse.debug.ui.actions.ToggleBreakpointAction.doIt(ToggleBreakpointAction.java:114)
+	at org.eclipse.debug.ui.actions.ToggleBreakpointAction.runWithEvent(ToggleBreakpointAction.java:92)
+	at org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate.runWithEvent(RulerToggleBreakpointActionDelegate.java:128)
+	at org.eclipse.ui.internal.handlers.ActionDelegateHandlerProxy.execute(ActionDelegateHandlerProxy.java:288)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.ui.actions.ContributedAction.runWithEvent(ContributedAction.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$2.triggerAction(AbstractTextEditor.java:3004)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$2.mouseDoubleClick(AbstractTextEditor.java:3033)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.jdt.core 4 0 2018-05-12 13:07:22.476
+!MESSAGE Invalid ZIP archive: 0Lib/selenium_jars/geckodriver.exe [in Selenium_Test]
+
+!ENTRY org.eclipse.jdt.core 4 0 2018-05-12 13:07:30.407
+!MESSAGE Invalid ZIP archive: 0Lib/selenium_jars/geckodriver.exe [in Selenium_Test]
+
+!ENTRY org.eclipse.jdt.debug.ui 4 150 2018-05-12 13:10:29.668
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1051)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:265)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1119)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:151)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:868)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:331)
+	at org.eclipse.jdt.internal.debug.ui.actions.ToggleBreakpointAdapter.toggleBreakpoints(ToggleBreakpointAdapter.java:1376)
+	at org.eclipse.jdt.internal.debug.ui.actions.ToggleBreakpointAdapter.toggleBreakpointsWithEvent(ToggleBreakpointAdapter.java:1568)
+	at org.eclipse.debug.ui.actions.ToggleBreakpointAction.doIt(ToggleBreakpointAction.java:114)
+	at org.eclipse.debug.ui.actions.ToggleBreakpointAction.runWithEvent(ToggleBreakpointAction.java:92)
+	at org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate.runWithEvent(RulerToggleBreakpointActionDelegate.java:128)
+	at org.eclipse.ui.internal.handlers.ActionDelegateHandlerProxy.execute(ActionDelegateHandlerProxy.java:288)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.ui.actions.ContributedAction.runWithEvent(ContributedAction.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$2.triggerAction(AbstractTextEditor.java:3004)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$2.mouseDoubleClick(AbstractTextEditor.java:3033)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.jdt.core 4 0 2018-05-12 13:11:19.690
+!MESSAGE Invalid ZIP archive: 0Lib/selenium_jars/geckodriver.exe [in Selenium_Test]
+
+!ENTRY org.eclipse.jdt.core 4 0 2018-05-12 13:12:02.470
+!MESSAGE Invalid ZIP archive: 0Lib/selenium_jars/geckodriver.exe [in Selenium_Test]
