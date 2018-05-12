@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1526157345955_1" label="drivers" name="drivers">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Selenium_Test/0Lib" type="2"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1526151918546_0" label="Window Working Set" name="Aggregate for window 1526151918545"/>
 </workingSetManager>
